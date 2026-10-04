@@ -1,0 +1,28 @@
+2026-10-04 21:57:51,284	INFO worker.py:1833 -- Connecting to existing Ray cluster at address: 172.22.0.2:6379...
+2026-10-04 21:57:51,294	INFO worker.py:2015 -- Connected to Ray cluster. View the dashboard at [1m[32mhttp://172.22.0.2:8265 [39m[22m
+2026-10-04 21:57:51,684	INFO streaming_executor.py:214 -- Starting execution of Dataset dataset_034aIW3IPqUSLxO1gvOJf9_0. Full logs are in /tmp/ray/session_2026-10-04_21-53-46_259777_1/logs/ray-data
+2026-10-04 21:57:51,684	INFO streaming_executor.py:215 -- Execution plan of Dataset dataset_034aIW3IPqUSLxO1gvOJf9_0: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[ReadFilesParquetV2] -> TaskPoolMapOperator[MapBatches(normalize)], InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[ReadFilesParquetV2] -> TaskPoolMapOperator[MapBatches(normalize)] -> UnionOperator[UnionOperator(MapBatches(normalize), MapBatches(normalize))] -> HashAggregateOperator[HashAggregate(key_columns=('VendorID', 'tpep_pickup_datetime', 'tpep_dropoff_datetime', 'passenger_count', 'trip_distance', 'RatecodeID', 'store_and_fwd_flag', 'PULocationID', 'DOLocationID', 'payment_type', 'fare_amount', 'extra', 'mta_tax', 'tip_amount', 'tolls_amount', 'improvement_surcharge', 'total_amount', 'congestion_surcharge', 'airport_fee'), num_partitions=16)] -> TaskPoolMapOperator[MapBatches(drop_columns)], InputDataBuffer[Input] -> TaskPoolMapOperator[ReadCSV] -> TaskPoolMapOperator[Project] -> JoinOperator[Join(num_partitions=16)] -> TaskPoolMapOperator[MapBatches(features)] -> TaskPoolMapOperator[Write]
+2026-10-04 21:57:51,687	WARNING __init__.py:28 -- Progress bars disabled. To enable, set `ray.data.DataContext.get_current().enable_progress_bars = True`.
+/home/arnav/miniforge3/envs/aiops/lib/python3.12/site-packages/ray/data/_internal/execution/operators/task_pool_map_operator.py:273: UserWarning: The maximum number of concurrent tasks for 'ReadFilesParquetV2' is set to 2, but the operator only received 1 input(s). This means that the operator can launch at most 1 task(s), which is less than the concurrency limit. You might be able to increase the number of concurrent tasks by configuring `override_num_blocks` earlier in the pipeline.
+  warnings.warn(
+2026-10-04 21:57:54,960	INFO hash_aggregate.py:161 -- Estimated memory requirement for aggregating aggregator (partitions=16, aggregators=2, dataset (estimate)=0.3GiB): shuffle=163.0MiB, output=20.4MiB, total=183.4MiB, 
+2026-10-04 21:59:51,394	INFO join.py:551 -- Estimated memory requirement for joining aggregator (partitions=16, aggregators=2, dataset (estimate)=0.0GiB): shuffle=8.9MiB, joining=2.2MiB, output=1.1MiB, total=12.2MiB, 
+2026-10-04 22:03:10,012	INFO streaming_executor.py:365 -- ✔️  Dataset dataset_034aIW3IPqUSLxO1gvOJf9_0 execution finished in 318.33 seconds
+2026-10-04 22:03:10,592	INFO dataset.py:6254 -- Data sink Parquet finished. 999636 rows and 244.5MiB data written.
+{
+  "framework": "ray",
+  "version": "2.58.0",
+  "mode": "million",
+  "input_files": [
+    "yellow_tripdata_2022-01.parquet",
+    "yellow_tripdata_2024-01.parquet"
+  ],
+  "output": "/opt/spark-data/output/ray-million-measured-20261005-032749",
+  "output_rows": 999636,
+  "ingestion_to_export_seconds": 319.1697211970004,
+  "pipeline_started_unix": 1791151071.422484,
+  "pipeline_finished_unix": 1791151390.5922062,
+  "schema": "VendorID: int64\ntpep_pickup_datetime: string\ntpep_dropoff_datetime: string\npassenger_count: double\ntrip_distance: double\nRatecodeID: double\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nairport_fee: double\npickup_borough: string\npickup_zone: string\npickup_service_zone: string\nspeed_mph: double\npickup_hour: int64\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 3119",
+  "purpose": "development check"
+}
+DONE: Ray million pipeline exported 999,636 rows.

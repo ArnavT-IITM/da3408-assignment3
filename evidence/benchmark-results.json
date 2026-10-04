@@ -1,0 +1,92 @@
+{
+  "spark": {
+    "pipeline": {
+      "framework": "spark",
+      "tag": "million-measured-20261005-032053",
+      "output_rows": 999636,
+      "ingestion_to_export_seconds": 132.79468356799953,
+      "sampled_peak_cpu_percent": 212.13,
+      "sampled_peak_memory_gib": 1.8946289062500001,
+      "samples_in_pipeline_interval": 44,
+      "monitor_errors": [],
+      "scope": "sum of framework containers, including head/master and driver",
+      "method": "Docker stats samples; 100% CPU is one core; RAM excludes reclaimable cache as reported by Docker; observed peaks, not continuous maxima",
+      "sampling": "one-second pause between Docker stats calls; actual timestamps saved; calls add latency"
+    },
+    "udf": {
+      "framework": "spark",
+      "version": "3.3.4",
+      "input": "output/spark-million",
+      "rows": 999636,
+      "trials": [
+        {
+          "trial": 1,
+          "seconds": 7.412201344001005,
+          "rows": 999636,
+          "speed_sum": 14199340.013772998
+        },
+        {
+          "trial": 2,
+          "seconds": 5.643981948998771,
+          "rows": 999636,
+          "speed_sum": 14199340.013772998
+        },
+        {
+          "trial": 3,
+          "seconds": 5.406740449001518,
+          "rows": 999636,
+          "speed_sum": 14199340.013772998
+        }
+      ],
+      "median_seconds": 5.643981948998771,
+      "method": "Speed UDF stage on preloaded timestamp inputs; includes scheduling, conversion and cache materialization/count action. Sum validation is outside timer. Trial 1 includes Python-worker warmup."
+    },
+    "run_directory": "spark-million-measured-20261005-032053",
+    "udf_directory": "spark-udf-20261005-034203"
+  },
+  "ray": {
+    "pipeline": {
+      "framework": "ray",
+      "tag": "million-measured-20261005-032749",
+      "output_rows": 999636,
+      "ingestion_to_export_seconds": 319.1697211970004,
+      "sampled_peak_cpu_percent": 305.72,
+      "sampled_peak_memory_gib": 5.3420000000000005,
+      "samples_in_pipeline_interval": 106,
+      "monitor_errors": [],
+      "scope": "sum of framework containers, including head/master and driver",
+      "method": "Docker stats samples; 100% CPU is one core; RAM excludes reclaimable cache as reported by Docker; observed peaks, not continuous maxima",
+      "sampling": "one-second pause between Docker stats calls; actual timestamps saved; calls add latency"
+    },
+    "udf": {
+      "framework": "ray",
+      "version": "2.58.0",
+      "input": "output/spark-million",
+      "rows": 999636,
+      "trials": [
+        {
+          "trial": 1,
+          "seconds": 2.3716302220000216,
+          "rows": 999636,
+          "speed_sum": 14199340.013773002
+        },
+        {
+          "trial": 2,
+          "seconds": 3.603883699001017,
+          "rows": 999636,
+          "speed_sum": 14199340.013773002
+        },
+        {
+          "trial": 3,
+          "seconds": 3.0223680079998303,
+          "rows": 999636,
+          "speed_sum": 14199340.013773
+        }
+      ],
+      "median_seconds": 3.0223680079998303,
+      "method": "Speed UDF stage on preloaded timestamp inputs; includes scheduling, conversion and materialization. Validation count/sum is outside timer. Trial 1 includes Python-worker warmup."
+    },
+    "run_directory": "ray-million-measured-20261005-032749",
+    "udf_directory": "ray-udf-20261005-033548"
+  }
+}

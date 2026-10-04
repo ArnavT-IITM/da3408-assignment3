@@ -1,0 +1,312 @@
+{
+  "trip_files": [
+    {
+      "file": "yellow_tripdata_2022-01.parquet",
+      "bytes": 38139949,
+      "rows": 2463931,
+      "row_groups": 1
+    },
+    {
+      "file": "yellow_tripdata_2022-02.parquet",
+      "bytes": 45616512,
+      "rows": 2979431,
+      "row_groups": 1
+    },
+    {
+      "file": "yellow_tripdata_2022-03.parquet",
+      "bytes": 55682369,
+      "rows": 3627882,
+      "row_groups": 1
+    },
+    {
+      "file": "yellow_tripdata_2022-04.parquet",
+      "bytes": 55222692,
+      "rows": 3599920,
+      "row_groups": 1
+    },
+    {
+      "file": "yellow_tripdata_2022-05.parquet",
+      "bytes": 55558821,
+      "rows": 3588295,
+      "row_groups": 1
+    },
+    {
+      "file": "yellow_tripdata_2022-06.parquet",
+      "bytes": 55365184,
+      "rows": 3558124,
+      "row_groups": 1
+    },
+    {
+      "file": "yellow_tripdata_2022-07.parquet",
+      "bytes": 49367712,
+      "rows": 3174394,
+      "row_groups": 1
+    },
+    {
+      "file": "yellow_tripdata_2022-08.parquet",
+      "bytes": 49717159,
+      "rows": 3152677,
+      "row_groups": 1
+    },
+    {
+      "file": "yellow_tripdata_2022-09.parquet",
+      "bytes": 49619957,
+      "rows": 3183767,
+      "row_groups": 1
+    },
+    {
+      "file": "yellow_tripdata_2022-10.parquet",
+      "bytes": 57061938,
+      "rows": 3675411,
+      "row_groups": 1
+    },
+    {
+      "file": "yellow_tripdata_2022-11.parquet",
+      "bytes": 50106631,
+      "rows": 3252717,
+      "row_groups": 1
+    },
+    {
+      "file": "yellow_tripdata_2022-12.parquet",
+      "bytes": 53640739,
+      "rows": 3399549,
+      "row_groups": 1
+    },
+    {
+      "file": "yellow_tripdata_2023-01.parquet",
+      "bytes": 47673370,
+      "rows": 3066766,
+      "row_groups": 1
+    },
+    {
+      "file": "yellow_tripdata_2023-02.parquet",
+      "bytes": 47748012,
+      "rows": 2913955,
+      "row_groups": 1
+    },
+    {
+      "file": "yellow_tripdata_2023-03.parquet",
+      "bytes": 56127762,
+      "rows": 3403766,
+      "row_groups": 1
+    },
+    {
+      "file": "yellow_tripdata_2023-04.parquet",
+      "bytes": 54222699,
+      "rows": 3288250,
+      "row_groups": 1
+    },
+    {
+      "file": "yellow_tripdata_2023-05.parquet",
+      "bytes": 58654627,
+      "rows": 3513649,
+      "row_groups": 1
+    },
+    {
+      "file": "yellow_tripdata_2023-06.parquet",
+      "bytes": 54999465,
+      "rows": 3307234,
+      "row_groups": 1
+    },
+    {
+      "file": "yellow_tripdata_2023-07.parquet",
+      "bytes": 48361828,
+      "rows": 2907108,
+      "row_groups": 1
+    },
+    {
+      "file": "yellow_tripdata_2023-08.parquet",
+      "bytes": 48152353,
+      "rows": 2824209,
+      "row_groups": 3
+    },
+    {
+      "file": "yellow_tripdata_2023-09.parquet",
+      "bytes": 47895515,
+      "rows": 2846722,
+      "row_groups": 3
+    },
+    {
+      "file": "yellow_tripdata_2023-10.parquet",
+      "bytes": 59009059,
+      "rows": 3522285,
+      "row_groups": 4
+    },
+    {
+      "file": "yellow_tripdata_2023-11.parquet",
+      "bytes": 56094653,
+      "rows": 3339715,
+      "row_groups": 4
+    },
+    {
+      "file": "yellow_tripdata_2023-12.parquet",
+      "bytes": 56804275,
+      "rows": 3376567,
+      "row_groups": 4
+    },
+    {
+      "file": "yellow_tripdata_2024-01.parquet",
+      "bytes": 49961641,
+      "rows": 2964624,
+      "row_groups": 3
+    },
+    {
+      "file": "yellow_tripdata_2024-02.parquet",
+      "bytes": 50349284,
+      "rows": 3007526,
+      "row_groups": 3
+    },
+    {
+      "file": "yellow_tripdata_2024-03.parquet",
+      "bytes": 60078280,
+      "rows": 3582628,
+      "row_groups": 4
+    },
+    {
+      "file": "yellow_tripdata_2024-04.parquet",
+      "bytes": 59133625,
+      "rows": 3514289,
+      "row_groups": 4
+    },
+    {
+      "file": "yellow_tripdata_2024-05.parquet",
+      "bytes": 62553128,
+      "rows": 3723833,
+      "row_groups": 4
+    },
+    {
+      "file": "yellow_tripdata_2024-06.parquet",
+      "bytes": 59859922,
+      "rows": 3539193,
+      "row_groups": 4
+    },
+    {
+      "file": "yellow_tripdata_2024-07.parquet",
+      "bytes": 52299432,
+      "rows": 3076903,
+      "row_groups": 3
+    },
+    {
+      "file": "yellow_tripdata_2024-08.parquet",
+      "bytes": 51067350,
+      "rows": 2979183,
+      "row_groups": 3
+    },
+    {
+      "file": "yellow_tripdata_2024-09.parquet",
+      "bytes": 61170186,
+      "rows": 3633030,
+      "row_groups": 4
+    },
+    {
+      "file": "yellow_tripdata_2024-10.parquet",
+      "bytes": 64346071,
+      "rows": 3833771,
+      "row_groups": 4
+    },
+    {
+      "file": "yellow_tripdata_2024-11.parquet",
+      "bytes": 60658709,
+      "rows": 3646369,
+      "row_groups": 4
+    },
+    {
+      "file": "yellow_tripdata_2024-12.parquet",
+      "bytes": 61524085,
+      "rows": 3668371,
+      "row_groups": 4
+    }
+  ],
+  "total_rows": 119136044,
+  "total_trip_bytes": 1943844994,
+  "schema_variants": [
+    {
+      "fields": {
+        "VendorID": "int64",
+        "tpep_pickup_datetime": "timestamp[us]",
+        "tpep_dropoff_datetime": "timestamp[us]",
+        "passenger_count": "double",
+        "trip_distance": "double",
+        "RatecodeID": "double",
+        "store_and_fwd_flag": "string",
+        "PULocationID": "int64",
+        "DOLocationID": "int64",
+        "payment_type": "int64",
+        "fare_amount": "double",
+        "extra": "double",
+        "mta_tax": "double",
+        "tip_amount": "double",
+        "tolls_amount": "double",
+        "improvement_surcharge": "double",
+        "total_amount": "double",
+        "congestion_surcharge": "double",
+        "airport_fee": "double"
+      },
+      "files": [
+        "yellow_tripdata_2022-01.parquet",
+        "yellow_tripdata_2022-02.parquet",
+        "yellow_tripdata_2022-03.parquet",
+        "yellow_tripdata_2022-04.parquet",
+        "yellow_tripdata_2022-05.parquet",
+        "yellow_tripdata_2022-06.parquet",
+        "yellow_tripdata_2022-07.parquet",
+        "yellow_tripdata_2022-08.parquet",
+        "yellow_tripdata_2022-09.parquet",
+        "yellow_tripdata_2022-10.parquet",
+        "yellow_tripdata_2022-11.parquet",
+        "yellow_tripdata_2022-12.parquet",
+        "yellow_tripdata_2023-01.parquet"
+      ]
+    },
+    {
+      "fields": {
+        "VendorID": "int32",
+        "tpep_pickup_datetime": "timestamp[us]",
+        "tpep_dropoff_datetime": "timestamp[us]",
+        "passenger_count": "int64",
+        "trip_distance": "double",
+        "RatecodeID": "int64",
+        "store_and_fwd_flag": "large_string",
+        "PULocationID": "int32",
+        "DOLocationID": "int32",
+        "payment_type": "int64",
+        "fare_amount": "double",
+        "extra": "double",
+        "mta_tax": "double",
+        "tip_amount": "double",
+        "tolls_amount": "double",
+        "improvement_surcharge": "double",
+        "total_amount": "double",
+        "congestion_surcharge": "double",
+        "Airport_fee": "double"
+      },
+      "files": [
+        "yellow_tripdata_2023-02.parquet",
+        "yellow_tripdata_2023-03.parquet",
+        "yellow_tripdata_2023-04.parquet",
+        "yellow_tripdata_2023-05.parquet",
+        "yellow_tripdata_2023-06.parquet",
+        "yellow_tripdata_2023-07.parquet",
+        "yellow_tripdata_2023-08.parquet",
+        "yellow_tripdata_2023-09.parquet",
+        "yellow_tripdata_2023-10.parquet",
+        "yellow_tripdata_2023-11.parquet",
+        "yellow_tripdata_2023-12.parquet",
+        "yellow_tripdata_2024-01.parquet",
+        "yellow_tripdata_2024-02.parquet",
+        "yellow_tripdata_2024-03.parquet",
+        "yellow_tripdata_2024-04.parquet",
+        "yellow_tripdata_2024-05.parquet",
+        "yellow_tripdata_2024-06.parquet",
+        "yellow_tripdata_2024-07.parquet",
+        "yellow_tripdata_2024-08.parquet",
+        "yellow_tripdata_2024-09.parquet",
+        "yellow_tripdata_2024-10.parquet",
+        "yellow_tripdata_2024-11.parquet",
+        "yellow_tripdata_2024-12.parquet"
+      ]
+    }
+  ],
+  "lookup_rows": 265,
+  "lookup_ids_unique": true
+}

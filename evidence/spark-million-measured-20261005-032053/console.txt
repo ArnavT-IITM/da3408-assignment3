@@ -1,0 +1,207 @@
+26/10/04 21:50:56 INFO SparkContext: Running Spark version 3.3.4
+26/10/04 21:50:57 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+26/10/04 21:50:57 WARN SparkConf: Note that spark.local.dir will be overridden by the value set by the cluster manager (via SPARK_LOCAL_DIRS in mesos/standalone/kubernetes and LOCAL_DIRS in YARN).
+26/10/04 21:50:57 INFO ResourceUtils: ==============================================================
+26/10/04 21:50:57 INFO ResourceUtils: No custom resources configured for spark.driver.
+26/10/04 21:50:57 INFO ResourceUtils: ==============================================================
+26/10/04 21:50:57 INFO SparkContext: Submitted application: A3-Spark-million
+26/10/04 21:50:57 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 512, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+26/10/04 21:50:57 INFO ResourceProfile: Limiting resource is cpus at 1 tasks per executor
+26/10/04 21:50:57 INFO ResourceProfileManager: Added ResourceProfile id: 0
+26/10/04 21:50:57 INFO SecurityManager: Changing view acls to: root
+26/10/04 21:50:57 INFO SecurityManager: Changing modify acls to: root
+26/10/04 21:50:57 INFO SecurityManager: Changing view acls groups to: 
+26/10/04 21:50:57 INFO SecurityManager: Changing modify acls groups to: 
+26/10/04 21:50:57 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(root); groups with view permissions: Set(); users  with modify permissions: Set(root); groups with modify permissions: Set()
+26/10/04 21:50:57 INFO Utils: Successfully started service 'sparkDriver' on port 41643.
+26/10/04 21:50:57 INFO SparkEnv: Registering MapOutputTracker
+26/10/04 21:50:57 INFO SparkEnv: Registering BlockManagerMaster
+26/10/04 21:50:57 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+26/10/04 21:50:57 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+26/10/04 21:50:57 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+26/10/04 21:50:57 INFO DiskBlockManager: Created local directory at /opt/spark-data/spark-scratch/driver/blockmgr-c23a8bb7-913d-4431-a8b6-8d95a178829a
+26/10/04 21:50:57 INFO MemoryStore: MemoryStore started with capacity 413.9 MiB
+26/10/04 21:50:57 INFO SparkEnv: Registering OutputCommitCoordinator
+26/10/04 21:50:57 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+26/10/04 21:50:58 INFO StandaloneAppClient$ClientEndpoint: Connecting to master spark://a3-spark-master:7077...
+26/10/04 21:50:58 INFO TransportClientFactory: Successfully created connection to a3-spark-master/172.22.0.2:7077 after 15 ms (0 ms spent in bootstraps)
+26/10/04 21:50:58 INFO StandaloneSchedulerBackend: Connected to Spark cluster with app ID app-20261004215058-0001
+26/10/04 21:50:58 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20261004215058-0001/0 on worker-20261004213639-172.22.0.3-7000 (172.22.0.3:7000) with 1 core(s)
+26/10/04 21:50:58 INFO StandaloneSchedulerBackend: Granted executor ID app-20261004215058-0001/0 on hostPort 172.22.0.3:7000 with 1 core(s), 512.0 MiB RAM
+26/10/04 21:50:58 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20261004215058-0001/1 on worker-20261004213639-172.22.0.4-7000 (172.22.0.4:7000) with 1 core(s)
+26/10/04 21:50:58 INFO StandaloneSchedulerBackend: Granted executor ID app-20261004215058-0001/1 on hostPort 172.22.0.4:7000 with 1 core(s), 512.0 MiB RAM
+26/10/04 21:50:58 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 34255.
+26/10/04 21:50:58 INFO NettyBlockTransferService: Server created on a3-spark-driver:34255
+26/10/04 21:50:58 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+26/10/04 21:50:58 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, a3-spark-driver, 34255, None)
+26/10/04 21:50:58 INFO BlockManagerMasterEndpoint: Registering block manager a3-spark-driver:34255 with 413.9 MiB RAM, BlockManagerId(driver, a3-spark-driver, 34255, None)
+26/10/04 21:50:58 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, a3-spark-driver, 34255, None)
+26/10/04 21:50:58 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, a3-spark-driver, 34255, None)
+26/10/04 21:50:58 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20261004215058-0001/1 is now RUNNING
+26/10/04 21:50:58 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20261004215058-0001/0 is now RUNNING
+26/10/04 21:50:58 INFO StandaloneSchedulerBackend: SchedulerBackend is ready for scheduling beginning after reached minRegisteredResourcesRatio: 0.0
+{
+  "framework": "spark",
+  "version": "3.3.4",
+  "mode": "million",
+  "input_files": [
+    "yellow_tripdata_2022-01.parquet",
+    "yellow_tripdata_2024-01.parquet"
+  ],
+  "output": "/opt/spark-data/output/spark-million-measured-20261005-032053",
+  "output_rows": 999636,
+  "ingestion_to_export_seconds": 132.79468356799953,
+  "pipeline_started_unix": 1791150658.746215,
+  "pipeline_finished_unix": 1791150791.5409012,
+  "schema": {
+    "fields": [
+      {
+        "metadata": {},
+        "name": "VendorID",
+        "nullable": true,
+        "type": "long"
+      },
+      {
+        "metadata": {},
+        "name": "tpep_pickup_datetime",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "metadata": {},
+        "name": "tpep_dropoff_datetime",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "metadata": {},
+        "name": "passenger_count",
+        "nullable": true,
+        "type": "double"
+      },
+      {
+        "metadata": {},
+        "name": "trip_distance",
+        "nullable": true,
+        "type": "double"
+      },
+      {
+        "metadata": {},
+        "name": "RatecodeID",
+        "nullable": true,
+        "type": "double"
+      },
+      {
+        "metadata": {},
+        "name": "store_and_fwd_flag",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "metadata": {},
+        "name": "PULocationID",
+        "nullable": true,
+        "type": "long"
+      },
+      {
+        "metadata": {},
+        "name": "DOLocationID",
+        "nullable": true,
+        "type": "long"
+      },
+      {
+        "metadata": {},
+        "name": "payment_type",
+        "nullable": true,
+        "type": "long"
+      },
+      {
+        "metadata": {},
+        "name": "fare_amount",
+        "nullable": true,
+        "type": "double"
+      },
+      {
+        "metadata": {},
+        "name": "extra",
+        "nullable": true,
+        "type": "double"
+      },
+      {
+        "metadata": {},
+        "name": "mta_tax",
+        "nullable": true,
+        "type": "double"
+      },
+      {
+        "metadata": {},
+        "name": "tip_amount",
+        "nullable": true,
+        "type": "double"
+      },
+      {
+        "metadata": {},
+        "name": "tolls_amount",
+        "nullable": true,
+        "type": "double"
+      },
+      {
+        "metadata": {},
+        "name": "improvement_surcharge",
+        "nullable": true,
+        "type": "double"
+      },
+      {
+        "metadata": {},
+        "name": "total_amount",
+        "nullable": true,
+        "type": "double"
+      },
+      {
+        "metadata": {},
+        "name": "congestion_surcharge",
+        "nullable": true,
+        "type": "double"
+      },
+      {
+        "metadata": {},
+        "name": "airport_fee",
+        "nullable": true,
+        "type": "double"
+      },
+      {
+        "metadata": {},
+        "name": "pickup_borough",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "metadata": {},
+        "name": "pickup_zone",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "metadata": {},
+        "name": "pickup_service_zone",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "metadata": {},
+        "name": "speed_mph",
+        "nullable": true,
+        "type": "double"
+      },
+      {
+        "metadata": {},
+        "name": "pickup_hour",
+        "nullable": true,
+        "type": "long"
+      }
+    ],
+    "type": "struct"
+  },
+  "purpose": "development check"
+}
+DONE: Spark million pipeline exported 999,636 rows.

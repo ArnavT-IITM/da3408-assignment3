@@ -1,0 +1,8 @@
+{
+  "result": "PASS",
+  "expected_speed_sum": 14199340.013773002,
+  "sum_absolute_tolerance": 1e-06,
+  "rows_per_trial": 999636,
+  "trials_checked": 6,
+  "scope": "row counts and speed sums; full pipeline exact parity is recorded separately"
+}

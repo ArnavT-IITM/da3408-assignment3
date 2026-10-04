@@ -1,0 +1,28 @@
+{
+  "framework": "spark",
+  "version": "3.3.4",
+  "input": "output/spark-million",
+  "rows": 999636,
+  "trials": [
+    {
+      "trial": 1,
+      "seconds": 7.412201344001005,
+      "rows": 999636,
+      "speed_sum": 14199340.013772998
+    },
+    {
+      "trial": 2,
+      "seconds": 5.643981948998771,
+      "rows": 999636,
+      "speed_sum": 14199340.013772998
+    },
+    {
+      "trial": 3,
+      "seconds": 5.406740449001518,
+      "rows": 999636,
+      "speed_sum": 14199340.013772998
+    }
+  ],
+  "median_seconds": 5.643981948998771,
+  "method": "Speed UDF stage on preloaded timestamp inputs; includes scheduling, conversion and cache materialization/count action. Sum validation is outside timer. Trial 1 includes Python-worker warmup."
+}

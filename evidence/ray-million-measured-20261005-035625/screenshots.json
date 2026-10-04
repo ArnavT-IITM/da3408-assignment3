@@ -1,0 +1,20 @@
+{
+  "run": "ray-million-measured-20261005-035625",
+  "job_id_shown": "01000000",
+  "driver_pid_shown": 876,
+  "dashboard_refresh": "Updated just now",
+  "status_shown": "RUNNING",
+  "screenshots": [
+    {
+      "file": "ray-job-running.png",
+      "source": "/home/arnav/Pictures/Screenshots/Screenshot From 2026-10-05 03-56-49.png",
+      "sha256": "321f05bd469b39e997bc54fd747ad0fbf27df3e5649941eb9ae1f78ce79f2eb8"
+    },
+    {
+      "file": "ray-cluster-running.png",
+      "source": "/home/arnav/Pictures/Screenshots/Screenshot From 2026-10-05 03-56-59.png",
+      "sha256": "4b901678b65df846f52697b43412cfa4e8e60b5dfa86c950528d966e9fec486c"
+    }
+  ],
+  "scope": "Fresh evidence run; not screenshots of the earlier 032749 benchmark. Completion must be verified separately."
+}

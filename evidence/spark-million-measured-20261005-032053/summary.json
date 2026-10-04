@@ -1,0 +1,13 @@
+{
+  "framework": "spark",
+  "tag": "million-measured-20261005-032053",
+  "output_rows": 999636,
+  "ingestion_to_export_seconds": 132.79468356799953,
+  "sampled_peak_cpu_percent": 212.13,
+  "sampled_peak_memory_gib": 1.8946289062500001,
+  "samples_in_pipeline_interval": 44,
+  "monitor_errors": [],
+  "scope": "sum of framework containers, including head/master and driver",
+  "method": "Docker stats samples; 100% CPU is one core; RAM excludes reclaimable cache as reported by Docker; observed peaks, not continuous maxima",
+  "sampling": "one-second pause between Docker stats calls; actual timestamps saved; calls add latency"
+}

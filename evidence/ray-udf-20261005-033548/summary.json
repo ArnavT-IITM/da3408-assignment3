@@ -1,0 +1,28 @@
+{
+  "framework": "ray",
+  "version": "2.58.0",
+  "input": "output/spark-million",
+  "rows": 999636,
+  "trials": [
+    {
+      "trial": 1,
+      "seconds": 2.3716302220000216,
+      "rows": 999636,
+      "speed_sum": 14199340.013773002
+    },
+    {
+      "trial": 2,
+      "seconds": 3.603883699001017,
+      "rows": 999636,
+      "speed_sum": 14199340.013773002
+    },
+    {
+      "trial": 3,
+      "seconds": 3.0223680079998303,
+      "rows": 999636,
+      "speed_sum": 14199340.013773
+    }
+  ],
+  "median_seconds": 3.0223680079998303,
+  "method": "Speed UDF stage on preloaded timestamp inputs; includes scheduling, conversion and materialization. Validation count/sum is outside timer. Trial 1 includes Python-worker warmup."
+}

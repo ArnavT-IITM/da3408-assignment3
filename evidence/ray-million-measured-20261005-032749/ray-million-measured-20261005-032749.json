@@ -1,0 +1,16 @@
+{
+  "framework": "ray",
+  "version": "2.58.0",
+  "mode": "million",
+  "input_files": [
+    "yellow_tripdata_2022-01.parquet",
+    "yellow_tripdata_2024-01.parquet"
+  ],
+  "output": "/opt/spark-data/output/ray-million-measured-20261005-032749",
+  "output_rows": 999636,
+  "ingestion_to_export_seconds": 319.1697211970004,
+  "pipeline_started_unix": 1791151071.422484,
+  "pipeline_finished_unix": 1791151390.5922062,
+  "schema": "VendorID: int64\ntpep_pickup_datetime: string\ntpep_dropoff_datetime: string\npassenger_count: double\ntrip_distance: double\nRatecodeID: double\nstore_and_fwd_flag: string\nPULocationID: int64\nDOLocationID: int64\npayment_type: int64\nfare_amount: double\nextra: double\nmta_tax: double\ntip_amount: double\ntolls_amount: double\nimprovement_surcharge: double\ntotal_amount: double\ncongestion_surcharge: double\nairport_fee: double\npickup_borough: string\npickup_zone: string\npickup_service_zone: string\nspeed_mph: double\npickup_hour: int64\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 3119",
+  "purpose": "development check"
+}

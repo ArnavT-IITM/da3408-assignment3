@@ -1,0 +1,164 @@
+{
+  "framework": "spark",
+  "version": "3.3.4",
+  "mode": "million",
+  "input_files": [
+    "yellow_tripdata_2022-01.parquet",
+    "yellow_tripdata_2024-01.parquet"
+  ],
+  "output": "/opt/spark-data/output/spark-million-measured-20261005-032053",
+  "output_rows": 999636,
+  "ingestion_to_export_seconds": 132.79468356799953,
+  "pipeline_started_unix": 1791150658.746215,
+  "pipeline_finished_unix": 1791150791.5409012,
+  "schema": {
+    "fields": [
+      {
+        "metadata": {},
+        "name": "VendorID",
+        "nullable": true,
+        "type": "long"
+      },
+      {
+        "metadata": {},
+        "name": "tpep_pickup_datetime",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "metadata": {},
+        "name": "tpep_dropoff_datetime",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "metadata": {},
+        "name": "passenger_count",
+        "nullable": true,
+        "type": "double"
+      },
+      {
+        "metadata": {},
+        "name": "trip_distance",
+        "nullable": true,
+        "type": "double"
+      },
+      {
+        "metadata": {},
+        "name": "RatecodeID",
+        "nullable": true,
+        "type": "double"
+      },
+      {
+        "metadata": {},
+        "name": "store_and_fwd_flag",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "metadata": {},
+        "name": "PULocationID",
+        "nullable": true,
+        "type": "long"
+      },
+      {
+        "metadata": {},
+        "name": "DOLocationID",
+        "nullable": true,
+        "type": "long"
+      },
+      {
+        "metadata": {},
+        "name": "payment_type",
+        "nullable": true,
+        "type": "long"
+      },
+      {
+        "metadata": {},
+        "name": "fare_amount",
+        "nullable": true,
+        "type": "double"
+      },
+      {
+        "metadata": {},
+        "name": "extra",
+        "nullable": true,
+        "type": "double"
+      },
+      {
+        "metadata": {},
+        "name": "mta_tax",
+        "nullable": true,
+        "type": "double"
+      },
+      {
+        "metadata": {},
+        "name": "tip_amount",
+        "nullable": true,
+        "type": "double"
+      },
+      {
+        "metadata": {},
+        "name": "tolls_amount",
+        "nullable": true,
+        "type": "double"
+      },
+      {
+        "metadata": {},
+        "name": "improvement_surcharge",
+        "nullable": true,
+        "type": "double"
+      },
+      {
+        "metadata": {},
+        "name": "total_amount",
+        "nullable": true,
+        "type": "double"
+      },
+      {
+        "metadata": {},
+        "name": "congestion_surcharge",
+        "nullable": true,
+        "type": "double"
+      },
+      {
+        "metadata": {},
+        "name": "airport_fee",
+        "nullable": true,
+        "type": "double"
+      },
+      {
+        "metadata": {},
+        "name": "pickup_borough",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "metadata": {},
+        "name": "pickup_zone",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "metadata": {},
+        "name": "pickup_service_zone",
+        "nullable": true,
+        "type": "string"
+      },
+      {
+        "metadata": {},
+        "name": "speed_mph",
+        "nullable": true,
+        "type": "double"
+      },
+      {
+        "metadata": {},
+        "name": "pickup_hour",
+        "nullable": true,
+        "type": "long"
+      }
+    ],
+    "type": "struct"
+  },
+  "purpose": "development check"
+}

@@ -1,0 +1,19 @@
+{
+  "source": "evidence/ray-million-measured-20261005-032749/ray-million-measured-20261005-032749-stats.txt",
+  "source_sha256": "0676f80c984fb8a154441c939e96cf154e0b84aaed2f1a6efb03d892de3a16e0",
+  "unit": "sum of reported remote wall seconds; overlapping tasks, not pipeline elapsed time",
+  "values": {
+    "dedup_shuffle": 109.88,
+    "dedup_finalize": 335.3,
+    "join_shuffle": 12.38,
+    "join_finalize": 1.19,
+    "features": 6.57,
+    "write": 9.02
+  },
+  "dedup_total": 445.18,
+  "join_total": 13.57,
+  "selected_total": 474.34000000000003,
+  "features_percent_of_selected_total": 1.38508243032424,
+  "cluster_spilled_MB_reported": 242,
+  "cluster_restored_MB_reported": 50
+}

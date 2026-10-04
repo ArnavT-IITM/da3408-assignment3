@@ -1,0 +1,33 @@
+2026-10-04 22:05:49,956	INFO worker.py:1833 -- Connecting to existing Ray cluster at address: 172.22.0.2:6379...
+2026-10-04 22:05:49,965	INFO worker.py:2015 -- Connected to Ray cluster. View the dashboard at [1m[32mhttp://172.22.0.2:8265 [39m[22m
+<stdin>:39: DeprecationWarning: `columns=` on `read_parquet` is deprecated. Use `ray.data.read_parquet(path).select_columns([...])` instead.
+2026-10-04 22:05:50,716	INFO streaming_executor.py:214 -- Starting execution of Dataset dataset_034aIiCGygyPLOgoKkcgJs_0. Full logs are in /tmp/ray/session_2026-10-04_21-53-46_259777_1/logs/ray-data
+2026-10-04 22:05:50,716	INFO streaming_executor.py:215 -- Execution plan of Dataset dataset_034aIiCGygyPLOgoKkcgJs_0: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[ReadFilesParquetV2] -> TaskPoolMapOperator[MapBatches(timestamps)]
+2026-10-04 22:05:50,717	WARNING __init__.py:28 -- Progress bars disabled. To enable, set `ray.data.DataContext.get_current().enable_progress_bars = True`.
+2026-10-04 22:05:54,907	INFO streaming_executor.py:365 -- ✔️  Dataset dataset_034aIiCGygyPLOgoKkcgJs_0 execution finished in 4.19 seconds
+2026-10-04 22:05:54,937	INFO streaming_executor.py:214 -- Starting execution of Dataset dataset_034aIiJ9FPbPXvCRIZYCaX_0. Full logs are in /tmp/ray/session_2026-10-04_21-53-46_259777_1/logs/ray-data
+2026-10-04 22:05:54,937	INFO streaming_executor.py:215 -- Execution plan of Dataset dataset_034aIiJ9FPbPXvCRIZYCaX_0: InputDataBuffer[Input] -> TaskPoolMapOperator[MapBatches(compute_speed)]
+2026-10-04 22:05:57,296	INFO streaming_executor.py:365 -- ✔️  Dataset dataset_034aIiJ9FPbPXvCRIZYCaX_0 execution finished in 2.36 seconds
+2026-10-04 22:05:57,307	INFO dataset.py:4088 -- Tip: Use `take_batch()` instead of `take() / show()` to return records in pandas or numpy batch format.
+2026-10-04 22:05:57,310	INFO streaming_executor.py:214 -- Starting execution of Dataset dataset_034aIiMsTHNuqN5qUl5YYA_0. Full logs are in /tmp/ray/session_2026-10-04_21-53-46_259777_1/logs/ray-data
+2026-10-04 22:05:57,310	INFO streaming_executor.py:215 -- Execution plan of Dataset dataset_034aIiMsTHNuqN5qUl5YYA_0: InputDataBuffer[Input] -> HashAggregateOperator[HashAggregate(key_columns=(), num_partitions=1)] -> LimitOperator[limit=1]
+2026-10-04 22:05:57,321	INFO hash_aggregate.py:161 -- Estimated memory requirement for aggregating aggregator (partitions=1, aggregators=1, dataset (estimate)=0.0GiB): shuffle=7.6MiB, output=7.6MiB, total=15.3MiB, 
+2026-10-04 22:06:00,345	INFO streaming_executor.py:365 -- ✔️  Dataset dataset_034aIiMsTHNuqN5qUl5YYA_0 execution finished in 3.03 seconds
+{"trial": 1, "seconds": 2.3716302220000216, "rows": 999636, "speed_sum": 14199340.013773002}
+2026-10-04 22:06:00,353	INFO streaming_executor.py:214 -- Starting execution of Dataset dataset_034aIiRfGvAfyVDIVgZTUm_0. Full logs are in /tmp/ray/session_2026-10-04_21-53-46_259777_1/logs/ray-data
+2026-10-04 22:06:00,353	INFO streaming_executor.py:215 -- Execution plan of Dataset dataset_034aIiRfGvAfyVDIVgZTUm_0: InputDataBuffer[Input] -> TaskPoolMapOperator[MapBatches(compute_speed)]
+2026-10-04 22:06:03,945	INFO streaming_executor.py:365 -- ✔️  Dataset dataset_034aIiRfGvAfyVDIVgZTUm_0 execution finished in 3.59 seconds
+2026-10-04 22:06:03,957	INFO streaming_executor.py:214 -- Starting execution of Dataset dataset_034aIiXKS08KW0JcnOJtHw_0. Full logs are in /tmp/ray/session_2026-10-04_21-53-46_259777_1/logs/ray-data
+2026-10-04 22:06:03,957	INFO streaming_executor.py:215 -- Execution plan of Dataset dataset_034aIiXKS08KW0JcnOJtHw_0: InputDataBuffer[Input] -> HashAggregateOperator[HashAggregate(key_columns=(), num_partitions=1)] -> LimitOperator[limit=1]
+2026-10-04 22:06:03,968	INFO hash_aggregate.py:161 -- Estimated memory requirement for aggregating aggregator (partitions=1, aggregators=1, dataset (estimate)=0.0GiB): shuffle=7.6MiB, output=7.6MiB, total=15.3MiB, 
+2026-10-04 22:06:06,243	INFO streaming_executor.py:365 -- ✔️  Dataset dataset_034aIiXKS08KW0JcnOJtHw_0 execution finished in 2.29 seconds
+{"trial": 2, "seconds": 3.603883699001017, "rows": 999636, "speed_sum": 14199340.013773002}
+2026-10-04 22:06:06,250	INFO streaming_executor.py:214 -- Starting execution of Dataset dataset_034aIiaw2z0wx8uj2wOvZ6_0. Full logs are in /tmp/ray/session_2026-10-04_21-53-46_259777_1/logs/ray-data
+2026-10-04 22:06:06,250	INFO streaming_executor.py:215 -- Execution plan of Dataset dataset_034aIiaw2z0wx8uj2wOvZ6_0: InputDataBuffer[Input] -> TaskPoolMapOperator[MapBatches(compute_speed)]
+2026-10-04 22:06:09,259	INFO streaming_executor.py:365 -- ✔️  Dataset dataset_034aIiaw2z0wx8uj2wOvZ6_0 execution finished in 3.01 seconds
+2026-10-04 22:06:09,272	INFO streaming_executor.py:214 -- Starting execution of Dataset dataset_034aIifgZOFkZ9qoDdpSxe_0. Full logs are in /tmp/ray/session_2026-10-04_21-53-46_259777_1/logs/ray-data
+2026-10-04 22:06:09,272	INFO streaming_executor.py:215 -- Execution plan of Dataset dataset_034aIifgZOFkZ9qoDdpSxe_0: InputDataBuffer[Input] -> HashAggregateOperator[HashAggregate(key_columns=(), num_partitions=1)] -> LimitOperator[limit=1]
+2026-10-04 22:06:09,282	INFO hash_aggregate.py:161 -- Estimated memory requirement for aggregating aggregator (partitions=1, aggregators=1, dataset (estimate)=0.0GiB): shuffle=7.6MiB, output=7.6MiB, total=15.3MiB, 
+2026-10-04 22:06:15,464	INFO streaming_executor.py:365 -- ✔️  Dataset dataset_034aIifgZOFkZ9qoDdpSxe_0 execution finished in 6.19 seconds
+{"trial": 3, "seconds": 3.0223680079998303, "rows": 999636, "speed_sum": 14199340.013773}
+DONE: Ray UDF timing saved.

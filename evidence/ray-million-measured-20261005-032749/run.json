@@ -1,0 +1,22 @@
+{
+  "command": [
+    "docker",
+    "exec",
+    "-i",
+    "-e",
+    "A3_MODE=million",
+    "-e",
+    "A3_RUN_TAG=million-measured-20261005-032749",
+    "a3-ray-head",
+    "/home/arnav/miniforge3/envs/aiops/bin/python",
+    "-u",
+    "-"
+  ],
+  "source_sha256": {
+    "ray_clean.py": "2b898e4bfa086339995b930a95ff61bb6b1a2595c11e9e6c0f4d6d827edaa57d",
+    "measure_run.py": "3b90664ece86b55534f7a6497f5873380c963f8ed3043223554091b884b557df",
+    "measurement_commands.json": "e640ce37320f7a9ae9ea861803c37de7087c4edb090926af22be9808f3c6795e",
+    "evidence/million-manifest.json": "ace42cbf64fbca972a6c657b8b4d4cbfd034ec310b5642b6f9db2cfd54981259"
+  },
+  "tag": "million-measured-20261005-032749"
+}

@@ -1,0 +1,777 @@
+[
+    {
+        "Id": "4758265b10c2ee4826a090f4e1c008ea818aef02e847bd00fb380e3c1632899b",
+        "Created": "2026-10-04T12:08:01.467211733Z",
+        "Path": "/__cacert_entrypoint.sh",
+        "Args": [
+            "/bin/bash",
+            "/start-spark.sh"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 45840,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2026-10-04T21:36:36.719456003Z",
+            "FinishedAt": "2026-10-04T20:30:13.690691767Z"
+        },
+        "Image": "sha256:7792f9d7de08cd894767f897a23a2535eabb856eb880364ff8fea9ce3834ac2b",
+        "ResolvConfPath": "/var/lib/docker/containers/4758265b10c2ee4826a090f4e1c008ea818aef02e847bd00fb380e3c1632899b/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/4758265b10c2ee4826a090f4e1c008ea818aef02e847bd00fb380e3c1632899b/hostname",
+        "HostsPath": "/var/lib/docker/containers/4758265b10c2ee4826a090f4e1c008ea818aef02e847bd00fb380e3c1632899b/hosts",
+        "LogPath": "/var/lib/docker/containers/4758265b10c2ee4826a090f4e1c008ea818aef02e847bd00fb380e3c1632899b/4758265b10c2ee4826a090f4e1c008ea818aef02e847bd00fb380e3c1632899b-json.log",
+        "Name": "/a3-spark-master",
+        "RestartCount": 0,
+        "Driver": "overlayfs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "docker-default",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": null,
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {
+                    "max-file": "2",
+                    "max-size": "10m"
+                }
+            },
+            "NetworkMode": "a3-network",
+            "PortBindings": {
+                "8080/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "9090"
+                    }
+                ]
+            },
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                16,
+                140
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 536870912,
+            "NanoCpus": 1000000000,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": [],
+            "BlkioDeviceReadBps": [],
+            "BlkioDeviceWriteBps": [],
+            "BlkioDeviceReadIOps": [],
+            "BlkioDeviceWriteIOps": [],
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": [],
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 1073741824,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": [],
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "Mounts": [
+                {
+                    "Type": "bind",
+                    "Source": "/run/media/arnav/ESD-USB/assignment3/data",
+                    "Target": "/opt/spark-data"
+                }
+            ],
+            "MaskedPaths": [
+                "/proc/acpi",
+                "/proc/asound",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/sys/devices/virtual/powercap",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "Storage": {
+            "RootFS": {
+                "Snapshot": {
+                    "Name": "overlayfs"
+                }
+            }
+        },
+        "Mounts": [
+            {
+                "Type": "bind",
+                "Source": "/run/media/arnav/ESD-USB/assignment3/data",
+                "Destination": "/opt/spark-data",
+                "Mode": "",
+                "RW": true,
+                "Propagation": "rprivate"
+            }
+        ],
+        "Config": {
+            "Hostname": "a3-spark-master",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "ExposedPorts": {
+                "7000/tcp": {},
+                "7077/tcp": {},
+                "8080/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "SPARK_WORKLOAD=master",
+                "PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "JAVA_HOME=/opt/java/openjdk",
+                "LANG=en_US.UTF-8",
+                "LANGUAGE=en_US:en",
+                "LC_ALL=en_US.UTF-8",
+                "JAVA_VERSION=jdk-17.0.20.1+1",
+                "SPARK_VERSION=3.3.4",
+                "HADOOP_VERSION=3",
+                "SPARK_HOME=/opt/spark",
+                "PYTHONHASHSEED=1",
+                "SPARK_MASTER_PORT=7077",
+                "SPARK_MASTER_WEBUI_PORT=8080",
+                "SPARK_LOG_DIR=/opt/spark/logs",
+                "SPARK_MASTER_LOG=/opt/spark/logs/spark-master.out",
+                "SPARK_WORKER_LOG=/opt/spark/logs/spark-worker.out",
+                "SPARK_WORKER_WEBUI_PORT=8080",
+                "SPARK_WORKER_PORT=7000",
+                "SPARK_MASTER=spark://spark-master:7077"
+            ],
+            "Cmd": [
+                "/bin/bash",
+                "/start-spark.sh"
+            ],
+            "Image": "cluster-apache-spark:3.3.4",
+            "Volumes": null,
+            "WorkingDir": "/opt/spark",
+            "Entrypoint": [
+                "/__cacert_entrypoint.sh"
+            ],
+            "Labels": {
+                "org.opencontainers.image.version": "22.04"
+            }
+        },
+        "NetworkSettings": {
+            "SandboxID": "9e25d68d59a23ff2612281182c4457966a742931ef08d45c13ac3d6b90a23120",
+            "SandboxKey": "/var/run/docker/netns/9e25d68d59a2",
+            "Ports": {
+                "7000/tcp": null,
+                "7077/tcp": null,
+                "8080/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "9090"
+                    }
+                ]
+            },
+            "Networks": {
+                "a3-network": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": null,
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "8181457f293c5a5aa3907892288f1706e9a7d29c2b99477acc3953852b6dd380",
+                    "EndpointID": "78650bff83fd9a473f3a8ffeaeb95ae2754b98fa841d09c1b90f0cf6a8e8fa5d",
+                    "Gateway": "172.22.0.1",
+                    "IPAddress": "172.22.0.2",
+                    "MacAddress": "ee:9c:0a:2e:0d:ad",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": [
+                        "a3-spark-master",
+                        "4758265b10c2"
+                    ]
+                }
+            }
+        },
+        "ImageManifestDescriptor": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:0fd7f266755af5ac9ea5132976d329e2f08f52552aea35b1f47e2a4d9ad2994b",
+            "size": 2581,
+            "platform": {
+                "architecture": "amd64",
+                "os": "linux"
+            }
+        }
+    },
+    {
+        "Id": "2d81e77e71077c57690f2540e5702cd0803d56ced0bcf948bb5d5f1381ee7486",
+        "Created": "2026-10-04T12:10:31.198692141Z",
+        "Path": "/__cacert_entrypoint.sh",
+        "Args": [
+            "/bin/bash",
+            "/start-spark.sh"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 45961,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2026-10-04T21:36:36.867326002Z",
+            "FinishedAt": "2026-10-04T20:30:13.690798057Z"
+        },
+        "Image": "sha256:7792f9d7de08cd894767f897a23a2535eabb856eb880364ff8fea9ce3834ac2b",
+        "ResolvConfPath": "/var/lib/docker/containers/2d81e77e71077c57690f2540e5702cd0803d56ced0bcf948bb5d5f1381ee7486/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/2d81e77e71077c57690f2540e5702cd0803d56ced0bcf948bb5d5f1381ee7486/hostname",
+        "HostsPath": "/var/lib/docker/containers/2d81e77e71077c57690f2540e5702cd0803d56ced0bcf948bb5d5f1381ee7486/hosts",
+        "LogPath": "/var/lib/docker/containers/2d81e77e71077c57690f2540e5702cd0803d56ced0bcf948bb5d5f1381ee7486/2d81e77e71077c57690f2540e5702cd0803d56ced0bcf948bb5d5f1381ee7486-json.log",
+        "Name": "/a3-spark-worker-a",
+        "RestartCount": 0,
+        "Driver": "overlayfs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "docker-default",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": null,
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {
+                    "max-file": "2",
+                    "max-size": "10m"
+                }
+            },
+            "NetworkMode": "a3-network",
+            "PortBindings": {
+                "8080/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "9091"
+                    }
+                ]
+            },
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                16,
+                140
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 2147483648,
+            "NanoCpus": 1000000000,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": [],
+            "BlkioDeviceReadBps": [],
+            "BlkioDeviceWriteBps": [],
+            "BlkioDeviceReadIOps": [],
+            "BlkioDeviceWriteIOps": [],
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": [],
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 4294967296,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": [],
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "Mounts": [
+                {
+                    "Type": "bind",
+                    "Source": "/run/media/arnav/ESD-USB/assignment3/data",
+                    "Target": "/opt/spark-data"
+                }
+            ],
+            "MaskedPaths": [
+                "/proc/acpi",
+                "/proc/asound",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/sys/devices/virtual/powercap",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "Storage": {
+            "RootFS": {
+                "Snapshot": {
+                    "Name": "overlayfs"
+                }
+            }
+        },
+        "Mounts": [
+            {
+                "Type": "bind",
+                "Source": "/run/media/arnav/ESD-USB/assignment3/data",
+                "Destination": "/opt/spark-data",
+                "Mode": "",
+                "RW": true,
+                "Propagation": "rprivate"
+            }
+        ],
+        "Config": {
+            "Hostname": "a3-spark-worker-a",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "ExposedPorts": {
+                "7000/tcp": {},
+                "7077/tcp": {},
+                "8080/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "SPARK_WORKLOAD=worker",
+                "SPARK_MASTER=spark://a3-spark-master:7077",
+                "SPARK_WORKER_CORES=1",
+                "SPARK_WORKER_MEMORY=1G",
+                "PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "JAVA_HOME=/opt/java/openjdk",
+                "LANG=en_US.UTF-8",
+                "LANGUAGE=en_US:en",
+                "LC_ALL=en_US.UTF-8",
+                "JAVA_VERSION=jdk-17.0.20.1+1",
+                "SPARK_VERSION=3.3.4",
+                "HADOOP_VERSION=3",
+                "SPARK_HOME=/opt/spark",
+                "PYTHONHASHSEED=1",
+                "SPARK_MASTER_PORT=7077",
+                "SPARK_MASTER_WEBUI_PORT=8080",
+                "SPARK_LOG_DIR=/opt/spark/logs",
+                "SPARK_MASTER_LOG=/opt/spark/logs/spark-master.out",
+                "SPARK_WORKER_LOG=/opt/spark/logs/spark-worker.out",
+                "SPARK_WORKER_WEBUI_PORT=8080",
+                "SPARK_WORKER_PORT=7000"
+            ],
+            "Cmd": [
+                "/bin/bash",
+                "/start-spark.sh"
+            ],
+            "Image": "cluster-apache-spark:3.3.4",
+            "Volumes": null,
+            "WorkingDir": "/opt/spark",
+            "Entrypoint": [
+                "/__cacert_entrypoint.sh"
+            ],
+            "Labels": {
+                "org.opencontainers.image.version": "22.04"
+            }
+        },
+        "NetworkSettings": {
+            "SandboxID": "efd582bd669287dc004f63ad4b084d57393b1a25a3e35aba817efc90ae08b87a",
+            "SandboxKey": "/var/run/docker/netns/efd582bd6692",
+            "Ports": {
+                "7000/tcp": null,
+                "7077/tcp": null,
+                "8080/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "9091"
+                    }
+                ]
+            },
+            "Networks": {
+                "a3-network": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": null,
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "8181457f293c5a5aa3907892288f1706e9a7d29c2b99477acc3953852b6dd380",
+                    "EndpointID": "97b3216c7f8b8cb762d61c256e9227366fdb4f0f5ec7925627d5268e49084891",
+                    "Gateway": "172.22.0.1",
+                    "IPAddress": "172.22.0.3",
+                    "MacAddress": "5e:a9:22:a3:65:47",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": [
+                        "a3-spark-worker-a",
+                        "2d81e77e7107"
+                    ]
+                }
+            }
+        },
+        "ImageManifestDescriptor": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:0fd7f266755af5ac9ea5132976d329e2f08f52552aea35b1f47e2a4d9ad2994b",
+            "size": 2581,
+            "platform": {
+                "architecture": "amd64",
+                "os": "linux"
+            }
+        }
+    },
+    {
+        "Id": "5b1f84589b450cf787ed46976ab3056d3b770fad42163790d2c3eecaf4065a6f",
+        "Created": "2026-10-04T12:36:15.01912924Z",
+        "Path": "/__cacert_entrypoint.sh",
+        "Args": [
+            "/bin/bash",
+            "/start-spark.sh"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 46057,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2026-10-04T21:36:37.029746188Z",
+            "FinishedAt": "2026-10-04T20:30:13.691205714Z"
+        },
+        "Image": "sha256:7792f9d7de08cd894767f897a23a2535eabb856eb880364ff8fea9ce3834ac2b",
+        "ResolvConfPath": "/var/lib/docker/containers/5b1f84589b450cf787ed46976ab3056d3b770fad42163790d2c3eecaf4065a6f/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/5b1f84589b450cf787ed46976ab3056d3b770fad42163790d2c3eecaf4065a6f/hostname",
+        "HostsPath": "/var/lib/docker/containers/5b1f84589b450cf787ed46976ab3056d3b770fad42163790d2c3eecaf4065a6f/hosts",
+        "LogPath": "/var/lib/docker/containers/5b1f84589b450cf787ed46976ab3056d3b770fad42163790d2c3eecaf4065a6f/5b1f84589b450cf787ed46976ab3056d3b770fad42163790d2c3eecaf4065a6f-json.log",
+        "Name": "/a3-spark-worker-b",
+        "RestartCount": 0,
+        "Driver": "overlayfs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "docker-default",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": null,
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {
+                    "max-file": "2",
+                    "max-size": "10m"
+                }
+            },
+            "NetworkMode": "a3-network",
+            "PortBindings": {
+                "8080/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "9092"
+                    }
+                ]
+            },
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                16,
+                140
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 2147483648,
+            "NanoCpus": 1000000000,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": [],
+            "BlkioDeviceReadBps": [],
+            "BlkioDeviceWriteBps": [],
+            "BlkioDeviceReadIOps": [],
+            "BlkioDeviceWriteIOps": [],
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": [],
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 4294967296,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": [],
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "Mounts": [
+                {
+                    "Type": "bind",
+                    "Source": "/run/media/arnav/ESD-USB/assignment3/data",
+                    "Target": "/opt/spark-data"
+                }
+            ],
+            "MaskedPaths": [
+                "/proc/acpi",
+                "/proc/asound",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/sys/devices/virtual/powercap",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "Storage": {
+            "RootFS": {
+                "Snapshot": {
+                    "Name": "overlayfs"
+                }
+            }
+        },
+        "Mounts": [
+            {
+                "Type": "bind",
+                "Source": "/run/media/arnav/ESD-USB/assignment3/data",
+                "Destination": "/opt/spark-data",
+                "Mode": "",
+                "RW": true,
+                "Propagation": "rprivate"
+            }
+        ],
+        "Config": {
+            "Hostname": "a3-spark-worker-b",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "ExposedPorts": {
+                "7000/tcp": {},
+                "7077/tcp": {},
+                "8080/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "SPARK_WORKLOAD=worker",
+                "SPARK_MASTER=spark://a3-spark-master:7077",
+                "SPARK_WORKER_CORES=1",
+                "SPARK_WORKER_MEMORY=1G",
+                "PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "JAVA_HOME=/opt/java/openjdk",
+                "LANG=en_US.UTF-8",
+                "LANGUAGE=en_US:en",
+                "LC_ALL=en_US.UTF-8",
+                "JAVA_VERSION=jdk-17.0.20.1+1",
+                "SPARK_VERSION=3.3.4",
+                "HADOOP_VERSION=3",
+                "SPARK_HOME=/opt/spark",
+                "PYTHONHASHSEED=1",
+                "SPARK_MASTER_PORT=7077",
+                "SPARK_MASTER_WEBUI_PORT=8080",
+                "SPARK_LOG_DIR=/opt/spark/logs",
+                "SPARK_MASTER_LOG=/opt/spark/logs/spark-master.out",
+                "SPARK_WORKER_LOG=/opt/spark/logs/spark-worker.out",
+                "SPARK_WORKER_WEBUI_PORT=8080",
+                "SPARK_WORKER_PORT=7000"
+            ],
+            "Cmd": [
+                "/bin/bash",
+                "/start-spark.sh"
+            ],
+            "Image": "cluster-apache-spark:3.3.4",
+            "Volumes": null,
+            "WorkingDir": "/opt/spark",
+            "Entrypoint": [
+                "/__cacert_entrypoint.sh"
+            ],
+            "Labels": {
+                "org.opencontainers.image.version": "22.04"
+            }
+        },
+        "NetworkSettings": {
+            "SandboxID": "13dd29da22a088f422095d37c564c08ca14fe9623c0d24501db2cba7a4632bf5",
+            "SandboxKey": "/var/run/docker/netns/13dd29da22a0",
+            "Ports": {
+                "7000/tcp": null,
+                "7077/tcp": null,
+                "8080/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "9092"
+                    }
+                ]
+            },
+            "Networks": {
+                "a3-network": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": null,
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "8181457f293c5a5aa3907892288f1706e9a7d29c2b99477acc3953852b6dd380",
+                    "EndpointID": "81884ce5afa4aa4d510c032bc4c7d332872733a7b7be1df9d557843aa748c4e5",
+                    "Gateway": "172.22.0.1",
+                    "IPAddress": "172.22.0.4",
+                    "MacAddress": "d6:5c:03:e8:c1:13",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": [
+                        "a3-spark-worker-b",
+                        "5b1f84589b45"
+                    ]
+                }
+            }
+        },
+        "ImageManifestDescriptor": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:0fd7f266755af5ac9ea5132976d329e2f08f52552aea35b1f47e2a4d9ad2994b",
+            "size": 2581,
+            "platform": {
+                "architecture": "amd64",
+                "os": "linux"
+            }
+        }
+    }
+]

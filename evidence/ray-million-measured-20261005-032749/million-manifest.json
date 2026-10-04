@@ -1,0 +1,21 @@
+{
+  "purpose": "pipeline development and parity checks, not full-data benchmarking",
+  "files": [
+    {
+      "source": "/run/media/arnav/ESD-USB/assignment3/data/raw/yellow_tripdata_2022-01.parquet",
+      "path": "/run/media/arnav/ESD-USB/assignment3/data/million_raw/yellow_tripdata_2022-01.parquet",
+      "selection": "first 500000 rows in file order",
+      "rows": 500000,
+      "bytes": 11231770,
+      "sha256": "bb2e04276547495154b4c31a5e27de4b2598117b0351311895a8b40d3fc3e6ac"
+    },
+    {
+      "source": "/run/media/arnav/ESD-USB/assignment3/data/raw/yellow_tripdata_2024-01.parquet",
+      "path": "/run/media/arnav/ESD-USB/assignment3/data/million_raw/yellow_tripdata_2024-01.parquet",
+      "selection": "first 500000 rows in file order",
+      "rows": 500000,
+      "bytes": 11176383,
+      "sha256": "02b7f7d76193b8a4e34ae2d462169c5784402c1a9b8f76b235482314a258b046"
+    }
+  ]
+}

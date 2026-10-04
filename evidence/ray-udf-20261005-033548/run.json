@@ -1,0 +1,16 @@
+{
+  "command": [
+    "docker",
+    "exec",
+    "-i",
+    "-e",
+    "A3_MODE=million",
+    "-e",
+    "A3_RUN_TAG=20261005-033548",
+    "a3-ray-head",
+    "/home/arnav/miniforge3/envs/aiops/bin/python",
+    "-u",
+    "-"
+  ],
+  "code_sha256": "0b6a64c2ea1d9f97798829e26b01d63b3503dd898f114e589bc008e77be71719"
+}

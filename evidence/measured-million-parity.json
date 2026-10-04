@@ -1,0 +1,10 @@
+{
+  "result": "PASS",
+  "rows": 999636,
+  "columns": 24,
+  "exact_values_dtypes_and_row_multiplicity": true,
+  "runs": {
+    "spark": "million-measured-20261005-032053",
+    "ray": "million-measured-20261005-032749"
+  }
+}
